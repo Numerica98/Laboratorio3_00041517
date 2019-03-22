@@ -9,15 +9,11 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/Texto1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SHARE ACTIVITY"
-        android:textSize="40sp"/>
+        android:text=""
+        android:textSize="@dimen/textSize_base"/>
 
-    <TextView
-        android:id="@+id/sharedText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="texto quemado"/>
 
 </LinearLayout>

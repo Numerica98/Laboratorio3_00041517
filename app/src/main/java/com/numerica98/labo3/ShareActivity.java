@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class ShareActivity extends AppCompatActivity {
 
-    TextView mSharedText;
+    TextView mTexto;
     private String text_aux;
 
     @Override
@@ -15,9 +15,7 @@ public class ShareActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
 
-        mSharedText= findViewById(R.id.sharedText);
-
-        text_aux= "Texto quemado";
+        mTexto= findViewById(R.id.Texto1);
 
         Intent new_intent = getIntent();
 
@@ -26,6 +24,6 @@ public class ShareActivity extends AppCompatActivity {
 
         }
 
-        mSharedText.setText(text_aux);
+        mTexto.setText(text_aux);
     }
 }

@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button m_action_submit;
     EditText editText1, editText2, editText3, editText4;
-    TextView textView1, textView2, textView3, textView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent m_intent= new Intent(MainActivity.this,NewActivity.class);//(donde estoy, adonde quiero ir)
 
-                m_intent.putExtra(AppConstants.TEXT1_KEY,"Texto desde MAinActivity"); //(clave,valor)
+                m_intent.putExtra(AppConstants.USER_KEY,editText1.getText().toString()); //(clave,valor)
+                m_intent.putExtra(AppConstants.PASSWORD_KEY,editText2.getText().toString());
+                m_intent.putExtra(AppConstants.EMAIL_KEY,editText3.getText().toString());
+                m_intent.putExtra(AppConstants.GENDER_KEY,editText4.getText().toString());
 
                 startActivity(m_intent);
             }

@@ -13,28 +13,28 @@
         android:id="@+id/editText_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_user"
+        android:hint="@string/text_user"
         android:textSize="@dimen/textSize_base"/>
 
     <EditText
         android:id="@+id/editText_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_password"
+        android:hint="@string/text_password"
         android:textSize="@dimen/textSize_base"/>
 
     <EditText
         android:id="@+id/editText_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_email"
+        android:hint="@string/text_email"
         android:textSize="@dimen/textSize_base"/>
 
     <EditText
         android:id="@+id/editText_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_gender"
+        android:hint="@string/text_gender"
         android:textSize="@dimen/textSize_base"/>
 
     <Button

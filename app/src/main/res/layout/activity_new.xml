@@ -89,7 +89,7 @@
 
 
     <ImageButton
-        android:id="@+id/submit2_action"
+        android:id="@+id/boton_compartir"
         android:layout_width="@dimen/size_image"
         android:layout_height="@dimen/size_image"
         android:src="@mipmap/compartir"
