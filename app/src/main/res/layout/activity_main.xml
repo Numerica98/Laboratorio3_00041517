@@ -4,12 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_principal"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_user"
+        android:textSize="@dimen/textSize_base"/>
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_password"
+        android:textSize="@dimen/textSize_base"/>
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"
+        android:textSize="@dimen/textSize_base"/>
+
+    <EditText
+        android:id="@+id/editText_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_gender"
+        android:textSize="@dimen/textSize_base"/>
 
     <Button
-        android:id="@+id/submit_action"
+        android:id="@+id/boton_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUbmit"/>
+        android:text="@string/text_submit"
+        android:textSize="@dimen/textSize_base"/>
+
+
 </LinearLayout>

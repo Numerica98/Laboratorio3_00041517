@@ -6,19 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".NewActivity"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/padding_principal">
 
-    <TextView
-        android:id="@+id/prueba_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="texto prueba"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
+        <TextView
+            android:id="@+id/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: "
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_user_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User:"
+            android:textSize="@dimen/textSize_base"
+            android:layout_toStarOf="@id/text_user" />
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:layout_below="@id/text_user"
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_password_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:layout_below="@id/text_password"
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:layout_below="@id/text_email"
+            android:textSize="@dimen/textSize_base"/>
+
+
+    </RelativeLayout>
+
+
+
+    <ImageButton
         android:id="@+id/submit2_action"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Compartir"/>
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@mipmap/compartir"
+        />
 
 </LinearLayout>
