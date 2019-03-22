@@ -2,4 +2,5 @@
 <resources>
     <dimen name="padding_principal">16dp</dimen>
     <dimen name="textSize_base">24dp</dimen>
+    <dimen name="size_image">110dp</dimen>
 </resources>

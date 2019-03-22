@@ -17,22 +17,23 @@
             android:id="@+id/text_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User: "
+            android:text="@string/text_user_mostrar"
             android:textSize="@dimen/textSize_base"/>
 
         <TextView
             android:id="@+id/text_user_ingresado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User:"
+            android:text=""
             android:textSize="@dimen/textSize_base"
-            android:layout_toStarOf="@id/text_user" />
+            android:layout_toEndOf="@id/text_user"
+            android:layout_toRightOf="@id/text_user" />
 
         <TextView
             android:id="@+id/text_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password: "
+            android:text="@string/text_password_mostrar"
             android:layout_below="@id/text_user"
             android:textSize="@dimen/textSize_base"/>
 
@@ -40,23 +41,46 @@
             android:id="@+id/text_password_ingresado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password:"
+            android:text=""
+            android:layout_toEndOf="@id/text_password"
+            android:layout_toRightOf="@id/text_password"
+            android:layout_alignBaseline="@id/text_password"
             android:textSize="@dimen/textSize_base"/>
 
         <TextView
             android:id="@+id/text_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
+            android:text="@string/text_email_mostrar"
             android:layout_below="@id/text_password"
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_email_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/text_email"
+            android:layout_toRightOf="@id/text_email"
+            android:layout_alignBaseline="@id/text_email"
             android:textSize="@dimen/textSize_base"/>
 
         <TextView
             android:id="@+id/text_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender:"
+            android:text="@string/text_gender_mostrar"
             android:layout_below="@id/text_email"
+            android:textSize="@dimen/textSize_base"/>
+
+        <TextView
+            android:id="@+id/text_gender_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/text_gender"
+            android:layout_toRightOf="@id/text_gender"
+            android:layout_alignBaseline="@id/text_gender"
             android:textSize="@dimen/textSize_base"/>
 
 
@@ -66,9 +90,9 @@
 
     <ImageButton
         android:id="@+id/submit2_action"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
         android:src="@mipmap/compartir"
-        />
+        android:layout_gravity="right|end"/>
 
 </LinearLayout>

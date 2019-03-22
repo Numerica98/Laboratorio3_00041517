@@ -5,4 +5,8 @@
     <string name="text_email">Email</string>
     <string name="text_gender">Gender</string>
     <string name="text_submit">Submit</string>
+    <string name="text_user_mostrar">User:</string>
+    <string name="text_password_mostrar">Password:</string>
+    <string name="text_email_mostrar">Email:</string>
+    <string name="text_gender_mostrar">Gender:</string>
 </resources>
